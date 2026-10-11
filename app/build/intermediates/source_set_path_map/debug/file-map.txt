@@ -1,0 +1,7 @@
+com.eyeguard.app-pngs-0 /workspaces/eyeguard/app/build/generated/res/pngs/debug
+com.eyeguard.app-resValues-1 /workspaces/eyeguard/app/build/generated/res/resValues/debug
+com.eyeguard.app-packageDebugResources-2 /workspaces/eyeguard/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.eyeguard.app-packageDebugResources-3 /workspaces/eyeguard/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.eyeguard.app-merged_res-4 /workspaces/eyeguard/app/build/intermediates/merged_res/debug
+com.eyeguard.app-debug-5 /workspaces/eyeguard/app/src/debug/res
+com.eyeguard.app-main-6 /workspaces/eyeguard/app/src/main/res

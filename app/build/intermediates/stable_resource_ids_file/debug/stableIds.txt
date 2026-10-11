@@ -1,0 +1,6 @@
+com.eyeguard.app:layout/activity_warning = 0x7f020001
+com.eyeguard.app:layout/activity_main = 0x7f020000
+com.eyeguard.app:string/app_name = 0x7f030000
+com.eyeguard.app:style/AppTheme = 0x7f040000
+com.eyeguard.app:id/switchEnable = 0x7f010001
+com.eyeguard.app:id/btnOk = 0x7f010000

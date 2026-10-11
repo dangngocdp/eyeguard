@@ -1,0 +1,86 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.eyeguard.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+11-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:4:5-77
+11-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:4:22-74
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:5:5-81
+12-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:5:22-78
+13    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+13-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:6:5-77
+13-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:6:22-74
+14    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+14-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:7:5-81
+14-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+15-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:8:5-89
+15-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:8:22-86
+16
+17    <application
+17-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:9:5-24:19
+18        android:allowBackup="true"
+18-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:9:18-44
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:label="Eye Guard"
+21-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:9:45-70
+22        android:theme="@style/AppTheme" >
+22-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:9:71-102
+23        <activity
+23-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:10:9-15:20
+24            android:name="com.eyeguard.app.MainActivity"
+24-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:10:19-47
+25            android:exported="true" >
+25-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:10:48-71
+26            <intent-filter>
+26-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:11:13-14:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:12:17-69
+27-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:12:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:13:17-77
+29-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:13:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <service
+33-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:16:9-18:19
+34            android:name="com.eyeguard.app.EyeGuardService"
+34-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:16:18-49
+35            android:exported="false"
+35-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:16:50-74
+36            android:foregroundServiceType="specialUse" >
+36-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:16:75-117
+37            <property
+37-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:17:13-119
+38                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+38-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:17:23-82
+39                android:value="monitorScreenTime" />
+39-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:17:83-116
+40        </service>
+41
+42        <receiver
+42-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:19:9-23:20
+43            android:name="com.eyeguard.app.BootReceiver"
+43-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:19:19-47
+44            android:exported="true" >
+44-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:19:48-71
+45            <intent-filter>
+45-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:20:13-22:29
+46                <action android:name="android.intent.action.BOOT_COMPLETED" />
+46-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:21:17-79
+46-->/workspaces/eyeguard/app/src/main/AndroidManifest.xml:21:25-76
+47            </intent-filter>
+48        </receiver>
+49    </application>
+50
+51</manifest>

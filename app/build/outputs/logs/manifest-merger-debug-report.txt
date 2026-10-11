@@ -1,0 +1,96 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:3:5-31
+		INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:4:5-77
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:4:22-74
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:6:22-74
+uses-permission#android.permission.USE_FULL_SCREEN_INTENT
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:8:5-89
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:8:22-86
+application
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:9:5-24:19
+INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:9:5-24:19
+	android:extractNativeLibs
+		INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml
+	android:label
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:9:45-70
+	android:allowBackup
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:9:18-44
+	android:theme
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:9:71-102
+activity#com.eyeguard.app.MainActivity
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:10:9-15:20
+	android:exported
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:10:48-71
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:10:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:11:13-14:29
+action#android.intent.action.MAIN
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:12:17-69
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:12:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:13:17-77
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:13:27-74
+service#com.eyeguard.app.EyeGuardService
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:16:9-18:19
+	android:exported
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:16:50-74
+	android:foregroundServiceType
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:16:75-117
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:16:18-49
+property
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:17:13-119
+	android:value
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:17:83-116
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:17:23-82
+receiver#com.eyeguard.app.BootReceiver
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:19:9-23:20
+	android:exported
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:19:48-71
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:19:19-47
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:20:13-22:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:21:17-79
+	android:name
+		ADDED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml:21:25-76
+uses-sdk
+INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml
+INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /workspaces/eyeguard/app/src/main/AndroidManifest.xml

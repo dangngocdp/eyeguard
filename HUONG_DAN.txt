@@ -1,0 +1,86 @@
+========================================
+  HƯỚNG DẪN CÀI ĐẶT EYE GUARD
+========================================
+
+BƯỚC 1 — CÀI ANDROID STUDIO
+------------------------------
+1. Vào: developer.android.com/studio
+2. Bấm "Download Android Studio Ladybug"
+3. Chạy file .exe → bấm Next liên tục → Finish
+4. Lần đầu mở: chờ tải SDK tự động (~1GB, mất 10-20 phút)
+
+BƯỚC 2 — TẠO PROJECT MỚI
+------------------------------
+1. Mở Android Studio
+2. Bấm "New Project"
+3. Chọn "Empty Views Activity" → Next
+4. Điền:
+   • Name: EyeGuard
+   • Package name: com.eyeguard.app
+   • Language: Java
+   • Minimum SDK: API 26 ("Oreo")
+5. Bấm Finish → chờ 1-2 phút
+
+BƯỚC 3 — COPY CODE VÀO PROJECT
+------------------------------
+Trong Android Studio, bên trái có cây thư mục.
+Mở: app > src > main
+
+A) Thay file AndroidManifest.xml:
+   - Mở file AndroidManifest.xml trong project
+   - Xóa hết nội dung cũ
+   - Copy nội dung từ file AndroidManifest.xml trong thư mục này
+   - Dán vào → Ctrl+S để lưu
+
+B) Thêm các file Java:
+   Vào thư mục: app > src > main > java > com.eyeguard.app
+   Right-click vào thư mục đó → New > Java Class
+   
+   Tạo lần lượt 4 file:
+   1. Tên: "EyeGuardService" → copy code từ EyeGuardService.java
+   2. Tên: "WarningActivity" → copy code từ WarningActivity.java
+   3. Tên: "BootReceiver" → copy code từ BootReceiver.java
+   4. File "MainActivity.java" đã có sẵn → xóa hết và paste từ MainActivity.java
+
+C) Thay file layout:
+   Vào: app > src > main > res > layout
+   
+   1. Mở "activity_main.xml" → xóa hết → paste từ activity_main.xml
+   2. Right-click vào layout → New > Layout Resource File
+      Đặt tên: "activity_warning" → OK
+      Xóa hết nội dung → paste từ activity_warning.xml
+
+D) Thêm themes:
+   Vào: app > src > main > res > values
+   Mở "themes.xml" → xóa hết → paste từ themes.xml
+
+E) Thay build.gradle:
+   Mở file "build.gradle (Module :app)"
+   Xóa hết → paste từ build.gradle
+   Bấm "Sync Now" khi được hỏi
+
+BƯỚC 4 — BUILD APK
+------------------------------
+1. Menu trên: Build > Build Bundle(s)/APK(s) > Build APK(s)
+2. Chờ 2-3 phút
+3. Bấm "locate" trong thông báo góc dưới phải
+4. File APK nằm tại:
+   app > build > outputs > apk > debug > app-debug.apk
+
+BƯỚC 5 — CÀI LÊN ĐIỆN THOẠI
+------------------------------
+1. Copy file app-debug.apk sang điện thoại (qua USB hoặc Zalo)
+2. Vào Cài đặt điện thoại > Bảo mật > Bật "Cài từ nguồn không xác định"
+3. Mở file APK → Cài đặt
+4. Mở app Eye Guard → Bật switch
+5. Cấp quyền thông báo khi được hỏi
+
+LƯU Ý QUAN TRỌNG
+------------------------------
+• Vào Cài đặt điện thoại > Pin > Tối ưu hóa pin
+  Tìm "Eye Guard" → chọn "Không tối ưu" để app không bị kill
+• App sẽ hiện trên thanh thông báo khi đang chạy
+• Sau 20 phút màn hình bật liên tục → hiện popup cảnh báo
+• Tắt màn hình → tự động reset về 0
+
+========================================

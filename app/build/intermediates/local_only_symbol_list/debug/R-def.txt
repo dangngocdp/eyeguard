@@ -1,0 +1,8 @@
+R_DEF: Internal format may change without notice
+local
+id btnOk
+id switchEnable
+layout activity_main
+layout activity_warning
+string app_name
+style AppTheme
